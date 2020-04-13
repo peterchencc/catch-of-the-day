@@ -49,6 +49,9 @@ class EditFishForm extends React.Component {
           onChange={this.handleChange}
           placeholder="image"
         />
+        <button onClick={() => this.props.deleteFish(this.props.index)}>
+          Delete fish
+        </button>
       </div>
     )
   }
